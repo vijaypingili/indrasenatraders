@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrasena Traders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Section -->
+    <div class="home">
+        <!-- Header Section -->
+        <div class="header" id="header">
+            <img class="logo" id="logo" src="./images/images/indra-logo.png" alt="indra-logo">
+            <ul class="link-items">
+                <li>Home</li>
+                <li>Products</li>
+                <li>Pricing</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+            <button class="get-it-now" id="get-it-now">Get it Now</button>
+        </div>
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="left">
+                <p class="headline">Building Strong Foundations with Quality Materials.</p>
+                <p class="sub-headline">"Your trusted material supplier for steel, cement, bricks, sand and stones. Delivering reliability and strength to every project."</p>
+                <div class="buttons">
+                    <button>Get a Quote</button>
+                    <button>View Products</button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./images/images/cementshop-banner.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Products Section -->
+        <div class="products">
+            <div class="top-p">
+                <p class="p-heading">Our Products</p>
+                <p class="p-subheading">Premium Construction Materials for Stronger Foundations</p>
+                <p class="p-description">Explore our wide range of high-quality materials, trusted by builders and Contractors.</p>
+            </div>
+            <div class="bottom-p">
+                <!-- Steel Card -->
+                <div class="card">
+                    <img class="card1" src="https://5.imimg.com/data5/ANDROID/Default/2021/9/RL/ZX/KV/128634146/product-jpeg-500x500.jpeg">
+                    <p class="card2">Steel Rods and Bars</p>
+                    <ul class="card3">
+                        <li>High Strength TMT Bars for durable structures</li>
+                        <li>Available in Tata, Radha, Tirumala etc.</li>
+                        <li>Corrosion resistant and ISI-Certified</li>
+                    </ul>
+                    <button class="get-it-now">View Details</button>
+                </div>
+
+                <!-- Cement Card -->
+                <div class="card">
+                    <img class="card1" src="https://5.imimg.com/data5/SELLER/Default/2023/11/364698116/JE/OT/EF/89560716/birla-a1-dolphin-cement-1000x1000.jpg">
+                    <p class="card2">Cement(All Major Brands)</p>
+                    <ul class="card3">
+                        <li>Premium Grade cement for all Construction needs</li>
+                        <li>Long lasting performance and durable.</li>
+                        <li>Available in bulk at wholesale prices</li>
+                    </ul>
+                    <button class="get-it-now">View Details</button>
+                </div>
+                
+                <!-- Bricks and Blocks  -->
+                <div class="card">
+                    <img class="card1" src="https://5.imimg.com/data5/SELLER/Default/2021/2/FS/YZ/VT/29526030/fly-ash-brick.jpg">
+                    <p class="card2">Fly ash and Clay Bricks</p>
+                    <ul class="card3">
+                        <li>12 x 6 x 6 Size for Fly Ash Bricks </li>
+                        <li>Uniform size and superior strength</li>
+                        <li>Suitable for Commercial and residential projects</li>
+                    </ul>
+                    <button class="get-it-now">View Details</button>
+                </div>
+                <!-- Sand and stones-->
+                <div class="card">
+                    <img class="card1" src="https://img1.exportersindia.com/product_images/bc-full/2019/8/4799620/sand-aggregate-1566796138-5053937.jpeg">
+                    <p class="card2">Sand and 20mm, 40mm Stones</p>
+                    <ul class="card3">
+                        <li>Fine and Coarse Sand for Construction use</li>
+                        <li>Crushed aggregates for concrete and road Construction</li>
+                        <li>Properly graded and delivered in bulk for large projects</li>
+                    </ul>
+                    <button class="get-it-now">View Details</button>
+                </div>
+
+                <!-- Flooring Stone -->
+                <div class="card">
+                    <img class="card1" src="https://www.kotastonesupplier.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-08-at-07.24.09_11zon.jpg">
+                    <p class="card2">Floor Laying Stone(Tandur)</p>
+                    <ul class="card3">
+                        <li>The Tandur laying stones primarily used for laying on the floor of various buildings throughout world.</li>
+                        <li>We are regularly supplying Tandur stones</li>
+                    </ul>
+                    <button class="get-it-now">View Details</button>
+                </div>
+
+                <!-- Roofing Sheets -->
+                <div class="card">
+                    <img class="card1" src="https://5.imimg.com/data5/SELLER/Default/2022/5/HZ/RX/SJ/141452101/jindal-roofing-sheet-1000x1000.jpg">
+                    <p class="card2">Roofing Sheets</p>
+                    <ul class="card3">
+                        <li>Jindal Roofing Sheets are the perfect choice for homeowners who are looking for a quality roofing solution.</li>
+                        <li>Cut down on costs with competitive pricing schemes</li>
+                        <li>These roofing sheets are crafted from the best materials, ensuring that your roof is strong and long-lasting.</li>
+                    </ul>
+                    <button class="get-it-now">View Details</button>
+                </div>
+            </div>
+     </div>
+     <script>
+        let lastScroll = window.scrollY;
+        const header = document.getElementById("header");
+        const logo = document.getElementById("logo");
+        const button = document.getElementById("get-it-now");
+
+        window.addEventListener('scroll', function() {
+            let currentScroll = window.scrollY;
+
+            if(currentScroll > lastScroll) {
+                header.classList.add("scrolled");
+                logo.src = "./images/images/indra-logo.png";
+                button.classList.add("scrolled-button");
+            } else {
+                header.classList.remove("scrolled");
+                logo.src = "./images/images/indra-logo.png";
+                button.classList.remove("scrolled-button");
+            }
+        })
+     </script>
+</body>
+</html>
